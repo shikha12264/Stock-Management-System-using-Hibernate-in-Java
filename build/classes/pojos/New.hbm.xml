@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 15, 2021 11:53:28 AM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="pojos.New" table="new" catalog="items">
+        <id name="itemCode" type="string">
+            <column name="Item_Code" length="100" />
+            <generator class="assigned" />
+        </id>
+        <property name="itemName" type="string">
+            <column name="Item_Name" length="40" not-null="true" />
+        </property>
+        <property name="quantity" type="string">
+            <column name="Quantity" length="40" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
